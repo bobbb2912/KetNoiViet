@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_list_comment_detail"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:background="@color/purple_primary"
+        android:id="@+id/header_dscmt"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginRight="12dp"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:src="@drawable/iicon_heart_white"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"/>
+            <TextView
+                android:id="@+id/solike_in_dscmt_details"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:drawableRight="@drawable/icon_arrow_forward_white"
+                android:drawablePadding="8dp"
+                android:gravity="center|left"
+                android:text="0"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/icon_like_inds_comment_details"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@null"
+            android:src="@drawable/iicon_heart_white"
+            android:layout_width="44dp"
+            android:layout_height="44dp"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_comments_details_act"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_dscmt"
+        app:layout_constraintBottom_toTopOf="@+id/edt_cmt"/>
+
+    <LinearLayout
+        android:id="@+id/edt_cmt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_comments_details_act">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center|top"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="8.5"
+                android:background="@drawable/custom_background_white_border_gray">
+
+                <EditText
+                    android:id="@+id/comment_post_detail_edt_ds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/custom_edittext_noframes"
+                    android:hint="Viết bình luận"
+                    android:imeOptions="actionSend|flagNoEnterAction"
+                    android:justificationMode="inter_word"
+                    android:minHeight="44dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/text_color_hint"
+                    android:textSize="16sp"
+                    android:windowSoftInputMode="adjustResize|adjustPan" />
+
+            </LinearLayout>
+
+            <ImageButton
+
+                android:id="@+id/send_content_comment_post_ds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1.5"
+                android:background="@null"
+                android:src="@drawable/icon_send" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--day ha ưA?f -->

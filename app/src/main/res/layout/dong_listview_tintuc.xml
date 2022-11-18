@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/background"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_weight="8.5"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="4dp">
+            <TextView
+                android:id="@+id/title_news"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="con chim non tren canh cao"
+                android:textColor="@drawable/custom_textview_post"
+                android:maxLines="1"
+                android:lines= "1"
+                android:ellipsize="end"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:minHeight="60dp"
+                android:scaleType="fitXY"
+                android:id="@+id/image_news"
+                android:layout_margin="2dp"
+                android:layout_weight="7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/description_news"
+                    android:justificationMode="inter_word"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:lines= "2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="hot liu lo, hot liu lo,, hot liu lo,, hot liu lo,, hot liu lo,, hot liu lo,, hot liu lo,, hot liu lo,, hot liu lo,, hot liu lo"
+                    android:textColor="@color/black"
+                    android:ellipsize="end"/>
+                <TextView
+                    android:id="@+id/datePost_news"
+                    android:justificationMode="inter_word"
+                    android:textStyle="italic"
+                    android:textSize="14sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="12:22 Jul,22,2022"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

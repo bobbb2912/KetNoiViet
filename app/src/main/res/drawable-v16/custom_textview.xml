@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Khi nhấn -->
+    <item android:state_pressed="true"
+    android:color="@color/purple_primary" >
+    </item>
+
+    <!-- Mặc định -->
+    <item android:color="@color/text_color_hint" />
+
+</selector>

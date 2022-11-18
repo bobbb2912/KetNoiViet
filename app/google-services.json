@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "390384287837",
+    "project_id": "ketnoiviet-775cc",
+    "storage_bucket": "ketnoiviet-775cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390384287837:android:332ca3297ea6c01ca68db4",
+        "android_client_info": {
+          "package_name": "com.hien.ketnoiviet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390384287837-n4drcffnra2hlbma237mj1j214cr0os6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4dGknAtaxpVVp3pAizXk9tOa-s4G7sAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390384287837-n4drcffnra2hlbma237mj1j214cr0os6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

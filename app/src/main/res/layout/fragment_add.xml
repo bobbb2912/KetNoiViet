@@ -1,0 +1,241 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="@color/white"
+        android:id="@+id/add_discover"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/purple_primary">
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:drawablePadding="12dp"
+                android:drawableRight="@drawable/icon_navbar_bottom_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng bài"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textStyle="italic"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="12dp"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:textSize="16sp"
+                android:text="Tây Bắc Bộ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/recyclerview1"
+                android:background="@color/background"
+                android:layout_below="@id/add_discover"
+                android:layout_height="140dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textStyle="italic"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="Bắc Trung Bộ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/recyclerview2"
+                        android:background="@color/background"
+                        android:layout_below="@id/add_discover"
+                        android:layout_height="140dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textStyle="italic"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/black"
+                        android:background="@color/white"
+                        android:textSize="16sp"
+                        android:text="Đông Bắc Bộ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:background="@color/background"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/recyclerview3"
+                        android:layout_below="@id/add_discover"
+                        android:layout_height="140dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textStyle="italic"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/black"
+                        android:background="@color/white"
+                        android:textSize="16sp"
+                        android:text="Nam Trung Bộ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:background="@color/background"
+                        android:orientation="horizontal"
+                        android:id="@+id/recyclerview4"
+                        android:layout_below="@id/add_discover"
+                        android:layout_height="140dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textStyle="italic"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/black"
+                        android:background="@color/white"
+                        android:textSize="16sp"
+                        android:text="Đồng Bằng Sông Hồng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/background"
+                        android:id="@+id/recyclerview5"
+                        android:layout_below="@id/add_discover"
+                        android:layout_height="140dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textStyle="italic"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/black"
+                        android:background="@color/white"
+                        android:textSize="16sp"
+                        android:text="Đông Nam Bộ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:background="@color/background"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/recyclerview6"
+                        android:layout_below="@id/add_discover"
+                        android:layout_height="140dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textStyle="italic"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/black"
+                        android:background="@color/white"
+                        android:textSize="16sp"
+                        android:text="Tây Nguyên"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/background"
+                        android:id="@+id/recyclerview7"
+                        android:layout_below="@id/add_discover"
+                        android:layout_height="140dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textStyle="italic"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/black"
+                        android:background="@color/white"
+                        android:textSize="16sp"
+                        android:text="Đồng Bằng Sông Cửu Long"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@color/background"
+                        android:id="@+id/recyclerview8"
+                        android:layout_below="@id/add_discover"
+                        android:layout_height="140dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="12dp"
+                        android:textColor="@color/black"
+                        android:background="@color/white"
+                        android:textSize="16sp"
+                        android:text="Du lịch &amp; cuộc sống"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

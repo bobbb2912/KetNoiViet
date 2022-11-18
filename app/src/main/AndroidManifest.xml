@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hien.ketnoiviet">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Others.Notification"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ketnoiviet"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="stateVisible|adjustResize">
+
+        <activity
+            android:name=".Here.SelectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Here.RecommendVisitActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Others.NewsDetail"
+            android:exported="true" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Others.imgFitScreen"
+            android:exported="true" />
+        <activity
+            android:name=".Discover.ListPostByProvince"
+            android:exported="true" />
+        <activity
+            android:name=".Discover.InfoByProvince"
+            android:exported="true" />
+        <activity
+            android:name=".Personal.SettingPersonal"
+            android:exported="true" />
+        <activity
+            android:name=".Others.SearchPlace"
+            android:exported="true" />
+        <activity
+            android:name=".Others.ListCommentDetails"
+            android:exported="true" />
+        <activity
+            android:name=".Others.PostDetail"
+            android:exported="true" />
+        <activity
+            android:name=".Others.PersonalOtherInfo"
+            android:exported="true" />
+        <activity
+            android:name=".Discover.PostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Personal.UnapprovedPosts"
+            android:exported="true"
+            android:parentActivityName=".Home.HomeActivity" />
+        <activity
+            android:name=".Help.TermsAndPolicies"
+            android:exported="true" />
+        <activity
+            android:name=".Help.Safe"
+            android:exported="true" />
+        <activity
+            android:name=".Help.ReportProblem"
+            android:exported="true" />
+        <activity
+            android:name=".Help.SupportMailbox"
+            android:exported="true" />
+        <activity
+            android:name=".Help.HelpCenter"
+            android:exported="true" />
+        <activity
+            android:name=".Personal.RatePersonal"
+            android:exported="true" />
+        <activity
+            android:name=".Personal.UpdateInformation"
+            android:exported="true" />
+        <activity
+            android:name=".Personal.Payment"
+            android:exported="true" />
+        <activity
+            android:name=".Personal.PersonalInfo"
+            android:exported="true" />
+        <activity
+            android:name=".Personal.ChangePassword"
+            android:exported="true" />
+        <activity
+            android:name=".Login.ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Login.ResetPhoneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Login.RegisterInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Home.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Login.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Login.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ketnoiviet.slidrActivityTheme" />
+        <activity
+            android:name=".Intro.IntroThreeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Intro.IntroTwoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ketnoiviet.slidrActivityTheme" />
+        <activity
+            android:name=".Intro.IntroOneActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ketnoiviet.slidrActivityTheme" />
+        <activity
+            android:name=".Intro.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

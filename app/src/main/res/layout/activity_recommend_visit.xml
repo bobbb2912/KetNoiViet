@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_search_place"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Others.SearchPlace"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="Điểm tham quan"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/icon_arrow_back_back"
+        android:id="@+id/toolar_diemthamqaun"
+        android:background="@color/purple_primary"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"/>
+    <ImageView
+        android:src="@drawable/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <LinearLayout
+        android:gravity="center|top"
+        android:layout_gravity="center|top"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/icon_minimize"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            app:tint="@color/text_color_hint" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/sapxep_rcm"
+            android:orientation="vertical"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/custom_background_white_border_gray"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:drawableRight="@drawable/ccp_down_arrow"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Sắp xếp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Lọc: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bankinh_rcm"
+            android:orientation="vertical"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/custom_background_white_border_gray"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:drawableRight="@drawable/ccp_down_arrow"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Bán kính"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/theloai_rcm"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/custom_background_white_border_gray"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:drawableRight="@drawable/ccp_down_arrow"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Thể loại"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/purple_primary"
+            android:id="@+id/btn_lancan_dtq"
+            android:text="Lân cận"
+            android:background="@color/background"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:id="@+id/btn_tatca_dtq"
+            android:textColor="@color/white"
+            android:text="Tất cả"
+            android:background="@color/text_color_hint"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/chua_co_bai_viet_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="12dp"
+            android:textColor="@color/text_color_hint"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="Chưa có bài viết"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/list_dtq_lc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ListView
+        android:id="@+id/list_dtq_tc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

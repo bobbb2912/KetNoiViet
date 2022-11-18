@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- Khi nhấn -->
+<item android:state_pressed="true"
+    android:color="@color/purple_primary" >
+    <shape
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+
+        <solid android:color="@color/purple_primary"/>
+        <corners
+            android:radius="8dp"/>
+        <padding android:bottom="0dp"/>
+        <stroke android:color="@color/purple_primary"
+            android:width="4dp"/>
+
+    </shape>
+</item>
+<!-- Mặc định -->
+<item android:color="@color/text_color_hint">
+    <shape
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+
+        <solid android:color="@color/background"/>
+        <corners
+            android:radius="8dp"/>
+        <padding android:bottom="0dp"/>
+        <stroke android:color="@color/background"
+            android:width="4dp"/>
+    </shape>
+</item>
+
+</selector>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_home"
+        android:title="@string/acction_home"
+        android:icon="@drawable/icon_navbar_bottom_home">
+    </item>
+    <item android:id="@+id/action_add"
+        android:title="Khám phá"
+        android:icon="@drawable/icon_pin_drop">
+    </item>
+    <item android:id="@+id/action_here"
+        android:title="Gần đây"
+        android:icon="@drawable/icon_navigation_locate">
+    </item>
+    <item android:id="@+id/action_notify"
+        android:title="Thông báo"
+        android:icon="@drawable/icon_navbar_bottom_notify">
+    </item>
+    <item android:id="@+id/action_personal"
+        android:title="@string/acction_personal"
+        android:icon="@drawable/icon_navbar_bottom_personal">
+    </item>
+
+</menu>
